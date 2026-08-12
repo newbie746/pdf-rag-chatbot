@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server-local.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server-local.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
