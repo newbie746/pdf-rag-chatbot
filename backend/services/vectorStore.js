@@ -1,6 +1,10 @@
-const { ChromaClient } = require("chromadb");
+const { CloudClient } = require("chromadb");
 
-const client = new ChromaClient({ path: process.env.CHROMA_URL || "http://localhost:8000" });
+const client = new CloudClient({
+  apiKey: process.env.CHROMA_API_KEY,
+  tenant: process.env.CHROMA_TENANT,
+  database: process.env.CHROMA_DATABASE,
+});
 
 const COLLECTION_NAME = "pdf_documents";
 
